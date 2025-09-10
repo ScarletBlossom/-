@@ -1,0 +1,16 @@
+{
+    "email":{
+        "user":"libaya159@163.com",
+        "pass":"TQpYKZkfRwPh6KKT"
+    },
+    "mysql":{
+        "host":"127.0.0.1",
+        "post":3307,
+        "passwd":"r04347"
+    },
+    "redis":{
+        "host":"127.0.0.1",
+        "post":6379,
+        "passwd":"r04347"
+    }
+}

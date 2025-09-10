@@ -1,0 +1,3 @@
+D:/gongzuo/kaifa/gateserver/build/CMakeFiles/main.dir
+D:/gongzuo/kaifa/gateserver/build/CMakeFiles/edit_cache.dir
+D:/gongzuo/kaifa/gateserver/build/CMakeFiles/rebuild_cache.dir

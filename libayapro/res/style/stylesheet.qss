@@ -1,0 +1,48 @@
+QDialog#Login,#Register{
+background-color:rgb(255, 255, 255);
+}
+
+#user_label, #pw_label{
+color:red;}
+
+#err_tip[state='normal']{
+    color: green;
+}
+
+#err_tip[state='err']{
+    color: red;
+}
+
+
+#pw_visible[state='unvisible']{
+   border-image: url(:/res/images/unvisible.png);
+}
+
+#pw_visible[state='unvisible_hover']{
+   border-image: url(:/res/images/unvisible_hover.png);
+}
+
+#pw_visible[state='visible']{
+   border-image: url(:/res/images/visible.png);
+}
+
+#pw_visible[state='visible_hover']{
+   border-image: url(:/res/images/visible_hover.png);
+}
+
+
+#pwagain_visible[state='unvisible']{
+   border-image: url(:/res/images/unvisible.png);
+}
+
+#pwagain_visible[state='unvisible_hover']{
+   border-image: url(:/res/images/unvisible_hover.png);
+}
+
+#pwagain_visible[state='visible']{
+   border-image: url(:/res/images/visible.png);
+}
+
+#pwagain_visible[state='visible_hover']{
+   border-image: url(:/res/images/visible_hover.png);
+}
