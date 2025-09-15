@@ -1,4 +1,4 @@
-#include "server.h"
+#include "../headers/server.h"
 #include "ConfigMgr.h"
 #include "IoConTextPool.h"
 
@@ -99,7 +99,6 @@
 // }
 
 int main(){
-	SetConsoleOutputCP(CP_UTF8);
     try
 	{
 		ConfigMgr &gCfgMgr = ConfigMgr::GetInstance();
