@@ -1,19 +1,12 @@
 #pragma once
 #include <cstring>
+#include "Const.h"
 class MsgNode
 {
 public:
-    MsgNode(int Maxlen):_maxlen(Maxlen),_len(0){
-        _data = new char[Maxlen+1]();
-        _data[Maxlen] = '\0';
-    }
-    void clear(){
-        _len = 0;
-        if(_data) memset(_data,0,_maxlen);
-    }
-    ~MsgNode(){
-        if(_data) delete[] _data;
-    }
+    MsgNode(short Maxlen);
+    void clear();
+    ~MsgNode();
     char* _data;
     short _maxlen;
     short _len;
@@ -22,16 +15,13 @@ public:
 class RecvMsgNode:public MsgNode
 {
 public:
-    RecvMsgNode(short Maxlen,short Msgid);
-    ~RecvMsgNode();
+    RecvMsgNode(short len,short msg_id);
     short _msgid;
 };
 
 class SendMsgNode:public MsgNode
 {
-private:
-    /* data */
 public:
- SendMsgNode:public MsgNode(/* args */);
-     SendMsgNode:public MsgNode();
+    SendMsgNode(const char* data,short len,short msg_id);
+    short _msgid;
 };
