@@ -9,6 +9,7 @@
 
 
 class CServer;
+class LogicSystem;
 
 class CSession:public std::enable_shared_from_this<CSession>
 {
@@ -43,5 +44,14 @@ public:
     void dealBody();
     bool _close_after_write = false;
     
+};
+
+class LogicNode{
+    friend class LogicSystem;
+public:
+    LogicNode(std::shared_ptr<CSession> session,std::shared_ptr<RecvMsgNode> node);
+private:
+    std::shared_ptr<CSession> _session;
+    std::shared_ptr<RecvMsgNode> _node;   
 };
 
